@@ -1,0 +1,183 @@
+ /* Defining a variables using name.  */
+ :root{
+    --pink:#FB2576;
+    --navy:#150050;
+    --purple:#3F0071;
+    --black:#000000;
+    --white:antiquewhite;
+    --Bluediamond:#4EE2EC;
+    --brown:rgb(136, 33, 33);
+}
+
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url(food.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color:seashell;
+}
+
+a {
+    color:var(--pink);
+    /* font-size:30px; */
+}
+
+header a{
+    text-decoration: none;
+    /* min-width: 166px; */
+}
+
+#DI{
+    font-size: 2em;
+    flex: 4.5;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    min-width: 170px;
+}
+
+nav a{
+    
+    flex:1;
+}
+
+a:hover{
+    color:rgb(172, 112, 172) ;
+}
+
+a:active{
+color: darkblue;
+}
+
+.text{
+display: flex;
+flex-direction: column;
+padding: 35px;
+height: 55vh;
+justify-content:center;
+/* align-items: center; */
+}
+
+.line1{
+color:var(--navy);
+font-size: 2em;
+font-weight: bolder;
+}
+
+.line2{
+color:rgb(2, 5, 17);
+/* font-size: 1.5em; */
+}
+
+.text div{
+    margin-top: .8em;
+}
+
+button{
+    border-radius: 10px;
+    margin-top:.8em ;
+    padding: 15px;
+    font-size:.9em ;
+    background-color: var(--purple);
+    color: antiquewhite;
+    border: 2px solid var(--purple);
+    box-shadow: 3px 3px 2px rgb(37, 37, 37);
+}
+
+.callus{
+    /* font-size: 1.5em; */
+    color: var(--brown);
+}
+
+h1{
+    color: rgb(56, 98, 142);
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+.menu{
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(255px,1fr));
+    background:linear-gradient(to right,rgb(210, 171, 178) ,rgb(169, 125, 132),rgb(202, 117, 131)); 
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bold;
+     color:rgb(0, 0, 0) ;
+
+    }       
+    #heading,#loche{
+        background:linear-gradient(to right,rgb(210, 171, 178) ,rgb(169, 125, 132),rgb(202, 117, 131));
+        font-size: 2em;
+        color: var(--navy);
+        display: flex;
+        justify-content: center;
+    }  
+
+    .coimbatore h2{
+        color: var(--Bluediamond);
+        margin-bottom: 15px;
+    }
+
+    .location{
+        display: flex;
+        background:linear-gradient(to right,rgb(210, 171, 178) ,rgb(169, 125, 132),rgb(202, 117, 131)) ;
+       flex-wrap: wrap;
+     }
+
+    .location div{
+        flex: 1;
+        min-width:185px;
+        padding: 15px;
+    }
+
+    table{
+        width: 100%;
+        padding: 20px;
+    }
+
+    th{
+        color: var(--Bluediamond);
+        font-size:30px;
+    }
+
+    .menu tr{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .menu td:nth-child(1){
+        flex: 1;
+        justify-self:left;
+    }
+
+    .menu td:nth-child(2){
+        justify-self: right;
+    }
+
+    .maincourse{
+        grid-row:span 3;
+    }
+
+    .footer{
+        background: #cb677d;
+        padding:5.8px;
+    }
+
+    header a i,nav a i{
+        margin-right:10px;
+    }
