@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employees Attendance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="employees icon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="script.js"></script>
+</head>
+<body onload="startTime()">
+    <div class="cover">
+    <nav>
+        <ul>
+           <li class="logo">
+            <img src="logo.png" alt="logo">
+            <a href="#">
+                <span id="icon">Admin</span></a>
+           </li>
+
+         <li>
+           <a href="#" class="icon">
+            <span class="material-symbols-outlined">
+                space_dashboard
+                </span>
+                <div id="text">   dashboard    </div> 
+           </a>
+        </li>
+    
+        <li>
+            <a href="#"class="icon">
+             <span class="material-symbols-outlined">
+                 finance
+                 </span>
+                 <div id="text">    Attendance    </div>
+            </a>
+         </li>
+
+         <li>
+            <a href="#"class="icon">
+             <span class="material-symbols-outlined">
+                 forum
+                 </span>
+                 <div id="text">   message   </div>
+            </a>
+         </li>
+
+        <li>
+            <a href="#"class="icon">
+             <span class="material-symbols-outlined">
+                 settings
+                 </span>
+                 <div id="text">settings</div>
+            </a>
+         </li>
+
+         <li>
+            <a href="#"class="icon">
+             <span class="material-symbols-outlined">
+                flag
+                 </span>
+                 <div id="text"> report </div>
+            </a>
+         </li>
+
+         <li>
+            <div class="logout">
+            <a href="#"  class="icon" class="logout">
+             <span class="material-symbols-outlined">
+                logout
+                </span>
+                 <div id="text"> logout</div>
+            </a>
+        </div>
+         </li>
+        </ul>
+    </nav>
+ <section>
+    <div id="cover">
+        <label for="nameInput">
+            Name:
+        </label>
+        <input type="text" 
+               id="nameInput" 
+               placeholder="Enter your name" required>
+        <label for="EmployeeInput">
+            Employee I'd:
+        </label>
+        <input type="Employee" 
+               id="EmployeeInput" 
+               placeholder="Enter your ID" required>
+        <label for="numberInput">
+            Mobile Details:
+        </label>
+        <input type="text" 
+               id="numberInput" 
+               placeholder="Enter your mobile details" required>
+        <label for="addressInput">
+            Address:
+        </label>
+        <textarea id="addressInput" 
+                  placeholder="Enter your address" required>
+        </textarea>
+        <button onclick="addData()">
+              Add
+          </button>
+    </div>
+    <table id="outputTable">
+        <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Mobile Details</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    
+    <script>
+
+        function addData() {
+            // Get input values from the user.
+            let name =
+                document.getElementById("nameInput").value;
+            let Employee =
+                document.getElementById("EmployeeInput").value;
+            let mobile =
+                document.getElementById("numberInput").value;
+            let address =
+                document.getElementById("addressInput").value;
+            
+            // This lines is to add a row after the user gives the answers of above inputs and takes that value to this row. 
+            let table = document.getElementById("outputTable");
+            let newRow = table.insertRow(table.rows.length);
+            
+            // Insert data into cells of the new row
+            newRow.insertCell(0).innerHTML = name;
+            newRow.insertCell(1).innerHTML = Employee;
+            newRow.insertCell(2).innerHTML = mobile;
+            newRow.insertCell(3).innerHTML = address;
+            newRow.insertCell(4).innerHTML =
+                '<button onclick="editData(this)">Edit</button>'+
+                '<button onclick="deleteData(this)">Delete</button>';
+            
+            // Clear input fields it clear the input fields after the button add is clicked.
+            clearInputs();
+        }
+  
+        function editData(button) {
+            
+            // Get the parent row of the clicked button
+            let row = button.parentNode.parentNode;
+            
+            // Get the cells within the row
+            let nameCell = row.cells[0];
+            let EmployeeCell = row.cells[1];
+            let mobileCell = row.cells[2];
+            let addressCell = row.cells[3];
+            
+            // Prompt the user to enter updated values
+            let nameInput =
+                prompt("Enter the updated name:",
+                    nameCell.innerHTML);
+            let EmployeeInput =
+                prompt("Enter the updated Employee:",
+                    EmployeeCell.innerHTML);
+            let numberInput =
+                prompt("Enter the updated mobile details:",
+                    mobileCell.innerHTML
+                );
+            let addressInput =
+                prompt("Enter the updated address:",
+                    addressCell.innerHTML
+                );
+            
+            // Update the cell contents with the new values
+            nameCell.innerHTML = nameInput;
+            EmployeeCell.innerHTML = EmployeeInput;
+            mobileCell.innerHTML = numberInput;
+            addressCell.innerHTML = addressInput;
+        }
+        function deleteData(button) {
+            
+            // Get the parent row of the clicked button
+            let row = button.parentNode.parentNode;
+  
+            // Remove the row from the table
+            row.parentNode.removeChild(row);
+        }
+        function clearInputs() {
+            
+            // Clear input fields
+            document.getElementById("nameInput").value = "";
+            document.getElementById("EmployeeInput").value = "";
+            document.getElementById("numberInput").value = "";
+            document.getElementById("addressInput").value = "";
+        }
+    </script>
+ </section>
+    
+<!-- <section class="main">
+    <div class="maintop">
+        <h1>Attendance</h1>
+        <span class="material-symbols-outlined">
+            manage_accounts
+            </span>
+    </div>
+   
+    <div class="users">
+        <div class="card">
+            <img src="logo.png">
+            <h4>Sahana</h4>
+            <p>Designer</p>
+            <div class="person">
+                <table>
+                    <tr>
+                        <td id="de"><span>45+</span></td>
+                            
+                    </tr>
+                    <tr>
+                        <td>Designs</td>
+                          
+                    </tr>
+                </table>
+            </div>
+            <button onclick='document.getElementById("de").innerHTML = "Awaiting For Zoho !"'>  Profile</button>
+        </div>
+        
+        
+            <div class="card">
+                <img src="logo.png">
+                <h4>Hema</h4>
+                <p>Designer</p>
+                <div class="person">
+                    <table>
+                        <tr>
+                            <td id="ee"><span>45+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Designs</td>
+                              
+                        </tr>
+                    </table>
+                </div>
+                <button onclick='document.getElementById("ee").innerHTML = "Awaiting For Zoho !"'>Profile</button>
+            </div>
+
+
+                <div class="card">
+                    <img src="logo.png">
+                    <h4>Rithika</h4>
+                    <p>Designer</p>
+                    <div class="person">
+                        <table>
+                            <tr>
+                                <td id="fe"><span>45+</span></td>
+                            
+                            </tr>
+                            <tr>
+                                <td>Designs</td>
+                                  
+                            </tr>
+                        </table>
+                    </div>
+                    <button onclick='document.getElementById("fe").innerHTML = "Awaiting For Zoho !"' >Profile</button>
+                </div>
+
+
+                    <div class="card">
+                        <img src="logo.png">
+                        <h4>Thanuja</h4>
+                        <p>Designer</p>
+                        <div class="person">
+                            <table>
+                                <tr>
+                                    <td id="ge"><span>45+</span></td>
+                                        
+                                </tr>
+                                <tr>
+                                    <td>Designs</td>
+                                      
+                                </tr>
+                            </table>
+                        </div>
+                        <button onclick='document.getElementById("ge").innerHTML = "Awaiting For Zoho !"'>Profile</button>
+                    </div>
+                 </div>
+           </section> 
+       </div> -->
+
+       <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+            h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            return i;
+        }
+        </script>
+        
+        <div id="txt"></div>
+</body>
+</html>
