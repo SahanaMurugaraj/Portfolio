@@ -1,0 +1,26 @@
+body{
+    background-image: url(bg2.jpeg);
+}
+
+*{
+    text-decoration: none;
+}
+
+a{
+    display: flex;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(113, 113, 113);
+    border: 1px solid rgb(255, 255, 255);
+    width: 200px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    border-radius: 20px;
+}
+
+a:hover{
+    color: rgb(249, 114, 141);
+    background-color: rgb(200, 226, 251);
+    border: 1px solid rebeccapurple;
+}
