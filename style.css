@@ -18,12 +18,14 @@ a{
     margin: auto;
     top: 50px;
     border-radius: 20px;
+    column-gap: 15px;
+    box-shadow: 3px 3px 3px rgb(139, 139, 139);
 }
 
 a:hover{
     color: rgb(249, 114, 141);
-    background-color: rgb(200, 226, 251);
-    border: 1px solid rgb(151, 91, 211);
+    background-color: rgb(200, 237, 241);
+    border: 1px solid rgb(102, 98, 98);
 }
 
 a span{
