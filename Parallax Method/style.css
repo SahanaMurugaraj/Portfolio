@@ -1,0 +1,95 @@
+ body{
+    font-family:Arial, Helvetica, sans-serif;
+ }
+
+		.parallax-1 {
+			width: 100%;
+			height: 600px;
+			background: url(background.jpg);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+		.parallax-1 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 150px;
+			height: 35px;
+			padding: 10px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			text-align: center;
+		}
+           
+        .p-1 {
+			padding: 45px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+            text-align: justify;
+		}
+
+		.parallax-2 {
+			width: 100%;
+			height: 600px;
+			background: url(bg2.jpg);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+
+		.parallax-2 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width:150px;
+			height: 27px;
+			padding: 10px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			text-align: center;
+			font-size: 23px;
+		} 
+
+		.p-2 {
+			text-align: justify;
+			padding: 30px;
+			font-size:20px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+            text-align: justify;
+		}
+
+        .parallax-3 {
+			width: 100%;
+			height: 600px;
+			background: url(background.jpg);
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+
+
+		.parallax-3 h2 {
+			margin: auto;
+			position: relative;
+			left: 500x;
+			top: 300px;
+			width: 180px;
+			height: 30px;
+			padding: 10px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+			text-align: center;
+			font-size: 23px;
+		} 
+
+		.p-3 {
+			padding: 30px;
+			font-size:20px;
+			background-color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
+            text-align: justify ;
+		}
