@@ -12,7 +12,8 @@ a{
     color: rgb(255, 255, 255);
     background-color: rgb(113, 113, 113);
     border: 1px solid rgb(255, 255, 255);
-    width: 200px;
+    width: 220px;
+    font-size: 16.5px;
     position: relative;
     margin: auto;
     top: 50px;
@@ -22,5 +23,10 @@ a{
 a:hover{
     color: rgb(249, 114, 141);
     background-color: rgb(200, 226, 251);
-    border: 1px solid rebeccapurple;
+    border: 1px solid rgb(151, 91, 211);
+}
+
+a span{
+    position: relative;
+    right:15px;
 }
