@@ -1,34 +1,150 @@
-body{
-    background-image: url(bg2.jpeg);
-}
-
 *{
     text-decoration: none;
+    font-family:cursive;
+   margin: auto;
+}
+
+body{
+    background-image: url(R.jpeg);
 }
 
 a{
+    color: rgb(0, 0, 0);
     display: flex;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(113, 113, 113);
-    border: 1px solid rgb(255, 255, 255);
-    width: 220px;
-    font-size: 16.5px;
     position: relative;
-    margin: auto;
-    top: 50px;
+    font-size: 19.3px;
     border-radius: 20px;
-    column-gap: 15px;
-    box-shadow: 3px 3px 3px rgb(139, 139, 139);
-}
+    padding: 15px;
+    transition: 1.3s;
+    box-shadow: 3px 3px 3px rgb(191, 191, 191);
 
+}
 a:hover{
-    color: rgb(249, 114, 141);
-    background-color: rgb(200, 237, 241);
-    border: 1px solid rgb(102, 98, 98);
+   rotate: 360deg;
 }
 
-a span{
+#l1  { 
+   width: 185px;
+   height: 30px;
+  background-color: #cd50e5;
+  border: 3px solid white;
+  left: 10px;
+  top: 10px;
+  border-radius: 50%;
+  transition: 1.3s;
+}
+
+#l2  {
+    background-color: #fa556d;
+    width: 330px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%; 
+    top: 500px;
+    transition: 1.3s;
+    left: 25px;
+}
+
+#l3  {
+    background-color: #63a4fa;
+    left: 250px;
+    bottom: 20px;
+    width: 180px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: 1.3s;
+}
+
+#l4  {
+    background-color: #93f77f;
+    width: 230px;
+    border: 3px solid white;
+    height: 40px;
+    border-radius: 50%;
+    right: 250px;
+    bottom: 100px;
+    transition: 1.3s;
+}
+
+#l5  {
+   background-color: #f8e52b;
+   width: 200px;
+   border: 3px solid white;
+   height: 40px;
+   border-radius: 50%;
+   top: 70px;
+   right:270px;
+   transition: 1.3s; 
+}
+
+#l6  {
+    background-color: #ff9c35;
+    width: 180px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid white;
+    left: 270px;
+    transition: 1.3s;
+}
+
+#l7  {
+    background-color:#c4e3ca;
+    border: 3px solid white;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     position: relative;
-    right:15px;
+    bottom: 270px;
+}
+
+div p  {
+    position: relative;
+    left: 10px;
+    top: 60px;
+    font-size:20px;
+}
+
+#cf{
+    position: relative;
+    right: 16px;
+}
+
+#rw{
+    position: relative;
+    left: 5px;
+}
+
+#pp{
+    position: relative;
+    right: 12px;
+}
+
+#eat{
+    position: relative;
+    left: 10px;
+}
+
+#lc{
+    position: relative;
+    left: 5px;
+}
+
+#di{
+    position: relative;
+    left: 10px;
+}
+
+#emo{
+    position: relative;
+    left: 20px;
+    top: 40px;
+}
+
+.name{
+    position: relative;
+    left: 130px;
+    padding: 5px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
 }
