@@ -9,7 +9,12 @@
 }
 
 body{
-    background-color: rgb(220, 236, 250);
+    background-color: #000000;
+}
+
+.de{
+    color: rgb(54, 221, 221);
+    font-size: 17px;
 }
 
 .logo img{
@@ -25,19 +30,15 @@ body{
     left: 40px;
     bottom: 21px;
 }
-
-#icon{
+ #name{
     text-transform: uppercase;
-    padding: 10px;
-    color: black;
-}
-
+ } 
 nav{
     position: sticky;
     top: 0;
     bottom: 0;
     left: 0; 
-    background-color:rgb(245, 245, 245);
+    background-color:rgb(243, 243, 243);
     width:55px;
     height: 100vh;
     transition: 1s;
@@ -67,7 +68,8 @@ a{
 }
 
 a:hover{
-   background-color:rgb(220, 236, 250);
+   background-color:rgb(0, 0, 0);
+   color: rgb(134, 214, 238);
    border-top-left-radius: 25px;
    border-bottom-left-radius: 25px ;
 }
@@ -166,7 +168,7 @@ td, td span{
     background-color:rgb(232, 244, 255);
 }
 
-/* Atten list */
+ Atten list 
 
 .atten{
     margin-top: 20px;
@@ -191,14 +193,16 @@ table{
     min-width: 100%;
     overflow: hidden;
     border-radius:5px 5px 5px ;
+    position: relative;
+    left: 30px;
 }
 
-table thead tr{
-    color: #b28383;
-    background: rgb(191, 209, 224);
+/* table thead tr{
+    color: #6a2020;
+    background: rgb(38, 118, 183);
     text-align: left;
     font-weight: bold;
-}
+} */
 
 .atten{
     padding: 10px 10px;
@@ -250,17 +254,19 @@ table thead tr{
     }
 
     button:hover {
-        background-color: #455557;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
     }
 
     th,
     td {
         border: 1.7px solid white;
         padding: 8px;
+        color: rgb(100, 223, 239);
         text-align: left;
     }
 
     th {
-        background-color:#4cafa8;
-        color:white;
+        background-color:#000000;
+        color:rgb(105, 200, 223);
     }
