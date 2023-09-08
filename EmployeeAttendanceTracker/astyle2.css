@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body{
+    background-image: url(homep.png);
+}
+
+#icon{
+    text-transform: uppercase;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+#text {
+    text-transform: uppercase;
+    padding: 2px;
+    position: relative;
+    left: 40px;
+    bottom: 21px;
+}
+ #name{
+    text-transform: uppercase;
+ } 
+nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    background-color:rgb(255, 255, 255);
+    width:55px;
+    height: 100vh;
+    transition: 1s;
+    overflow: hidden;
+}
+
+nav:hover{
+    width: 250px;
+}
+
+div .logout{
+    position: absolute;
+    bottom: 0;
+}
+
+
+a{
+    position: relative;
+    display: table;
+    padding: 10px;
+    width: 250px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    left: 50px;
+    bottom: 40px;
+    
+}
+
+a:hover{
+   background-color:rgb(0, 0, 0);
+   color: rgb(134, 214, 238);
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px ;
+}
+
+.icon{
+    position: relative;
+    display: block;
+    left: 10px;
+    top: 2px;
+    color: black;
+}
