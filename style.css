@@ -114,6 +114,7 @@ img{
     box-shadow: 3px 3px 3px rgb(191, 191, 191); 
     bottom: 125px;
     right: 150px;
+    transition: 1.3s;
 }
 
 div p  {
