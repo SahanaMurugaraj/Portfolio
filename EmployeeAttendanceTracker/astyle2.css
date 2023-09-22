@@ -9,7 +9,14 @@
 }
 
 body{
-    background-image: url(homep.png);
+      background-image: url(homep.png);
+       background-repeat: no-repeat center;
+      background-attachment:center fixed;
+      -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      
 }
 
 #icon{

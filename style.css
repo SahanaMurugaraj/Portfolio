@@ -19,38 +19,35 @@ a{
     box-shadow: 3px 3px 3px rgb(191, 191, 191);
 
 }
-a:hover{
-   rotate: 360deg;
-}
+
 
 #l1  { 
-   width: 185px;
+   width: 30px;
    height: 30px;
   background-color: #cd50e5;
   border: 3px solid white;
-  left: 10px;
-  top: 10px;
+  left: 140px;
+  top: 550px;
   border-radius: 50%;
   transition: 1.3s;
 }
 
 #l2  {
     background-color: #fa556d;
-    width: 330px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border: 3px solid white;
     border-radius: 50%; 
-    top: 500px;
     transition: 1.3s;
-    left: 25px;
+    bottom: 40px;
 }
 
 #l3  {
     background-color: #63a4fa;
     left: 250px;
-    bottom: 20px;
-    width: 180px;
-    height: 40px;
+    bottom: 40px;
+    width: 30px;
+    height: 30px;
     border: 3px solid white;
     border-radius: 50%;
     transition: 1.3s;
@@ -58,30 +55,31 @@ a:hover{
 
 #l4  {
     background-color: #93f77f;
-    width: 230px;
+    width: 30px;
     border: 3px solid white;
-    height: 40px;
+    height: 30px;
     border-radius: 50%;
     right: 250px;
-    bottom: 100px;
+    bottom: 90px;
     transition: 1.3s;
 }
 
 #l5  {
    background-color: #f8e52b;
-   width: 200px;
+   width: 30px;
    border: 3px solid white;
-   height: 40px;
+   height: 30px;
+   top:70px;
    border-radius: 50%;
-   top: 70px;
    right:270px;
    transition: 1.3s; 
 }
 
 #l6  {
     background-color: #ff9c35;
-    width: 180px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
     border-radius: 50%;
     border: 3px solid white;
     left: 270px;
@@ -95,7 +93,27 @@ a:hover{
     height: 250px;
     border-radius: 50%;
     position: relative;
-    bottom: 270px;
+    bottom: 220px;
+}
+
+img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    left: 15px;
+}
+
+#l8{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#e9c3ee;
+    border: 3px solid white;
+    box-shadow: 3px 3px 3px rgb(191, 191, 191); 
+    bottom: 125px;
+    right: 150px;
 }
 
 div p  {

@@ -1,20 +1,3 @@
-// function startTime() {
-//     var today = new Date();
-//     var h = today.getHours();
-//     var m = today.getMinutes();
-//     var s = today.getSeconds();
-//     m = checkTime(m);
-//     s = checkTime(s);
-//     document.getElementById('txt').innerHTML =
-//     h + ":" + m + ":" + s;
-//     var t = setTimeout(startTime, 500);
-// }
-// function checkTime(i) {
-//     if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-//     return i;
-// }
-
-
 function addData() {
     // Get input values from the user.
     let name =
@@ -92,3 +75,17 @@ function clearInputs() {
     document.getElementById("numberInput").value = "";
     document.getElementById("addressInput").value = "";
 }
+
+function validateInput() {
+    // Get the value of the input element
+    var inputValue = document.getElementById("myInput").value;
+    // If the value is empty, display an alert message
+    if (inputValue == "") {
+      alert("Please fill the input field");
+    }
+    // Otherwise, do something else
+    else {
+      // Your code here
+    }
+  }
+  
