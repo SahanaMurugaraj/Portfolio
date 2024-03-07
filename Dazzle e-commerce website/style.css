@@ -1,0 +1,283 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* button{
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+* p{
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Grape Nuts', cursive;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow:
+        0 1px 1px hsl(0deg 0% 0% / 0.075),
+        0 2px 2px hsl(0deg 0% 0% / 0.075),
+        0 4px 4px hsl(0deg 0% 0% / 0.075),
+        0 8px 8px hsl(0deg 0% 0% / 0.075),
+        0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+.nb-links p {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nb-links a {
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.nb-links a:hover {
+    text-decoration: underline;
+    color: #1D232C;
+}
+
+.nb-menu-toggle {
+    display: none;
+}
+
+/* side nav-bar */
+
+.side-nav-bar {
+    background-color: #1D232C;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 10px;
+    color: white;
+    transition: 1.5s;
+}
+
+.snb-link {
+    margin-bottom: 30px;
+}
+
+.snb-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.snb-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.head-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1D232C;
+    color: white;
+}
+
+
+.service{
+  padding: 20px;
+}
+
+.ser-container1{
+    display: flex;
+   align-items: center;
+   justify-content:space-between ;
+}
+
+.ser-container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+} 
+
+.ser-container2 div{
+    background-color: #F2F4F7; 
+    border-radius: 5px;
+}
+
+.new-arrival{
+    padding: 1 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.na-container{
+  position: relative;
+  flex-basis: 20%;   
+}
+
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border: none;
+}
+
+.news{
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 20px;
+}
+
+.news input{
+     padding: 10px;
+     width: 80vw;
+     margin-bottom: 10px;
+     border: 1px solid black;
+}
+ .news button{
+    margin-top: 10px;
+    color:#F2F4F7;
+    background-color: #1D232C;
+    padding: 10px;
+
+ }
+
+ .footer{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: #1D232C;
+    color:#F2F4F7;
+ }
+
+.pro-section{
+    margin-top: 20px;
+}
+
+.pro-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.pro-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.pro-search input:focus{
+outline: none;
+}
+
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pro-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.pro-box img{
+    border-radius: 10px;
+}
+
+.contact form{
+    background-color: #1D232C;
+    color: #F2F4F7;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact p{
+  font-size: 20px;
+  border: 1px solid #1D232C;
+  padding: 10px;
+}
+
+.contact input{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#name-inp{
+    height: 30px;
+}
+
+#email-inp{
+    height: 30px;
+}
+
+#msg-inp{
+    height: 70px;
+}
+
+.contact-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    background-color: #545f70;
+    color: white;
+}
+
+/* Media Query */
+
+@media screen and (max-width:700px) {
+    .nb-menu-toggle {
+        display: block;
+    }
+
+    .nb-links p {
+        display: none;
+    }
+
+    .head-img{
+        display: none;
+    }
+    .ser-container1{
+        display: none;
+    }
+    .ser-container2{
+         flex-direction: column;
+    }
+}
